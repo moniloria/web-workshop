@@ -1,22 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <title>HTML controls</title>
 </head>
 <body>
-    <div id="topDiv">
-        <h1>Divs</h1>
-        <div>div 1</div>
-        <div>div 2</div>
-        <div>div 3</div>
-    </div>
+    <h2>Articles and sections</h2>
+    <article>
+        <section>
+            section 1 <i>with italic</i> and <u>underline</u>
+        </section>
+
+        <section>
+            <p>
+                section 2 <b>with bold text</b>
+            </p>
+        </section>
+    </article>
+
+    <h2>Tables</h2>
+    <table border="1", style="background-color: coral">
+        <thead><!--Table head-->
+            <caption>Title</caption>
+            <tr>
+                <td>
+                    <b>column0</b>
+                </td>
+                <td>
+                    <b>column1</b>
+                </td>
+                <td>
+                    <b>column2</b>
+                </td>
+            </tr>
+        </thead>
+        <tbody><!--this is the actual body of the table-->
+            <tr><!--row1-->
+                <td>
+                    <div>
+                            row 0, column 0😃<!--column-->
+                    </div>
+                </td>
+                <td>row 0, column 1😁<!--column--></td>
+                <td>row 0, column 2😜<!--column--></td>
+            </tr>
+            <tr><!--row2-->
+                <td>row 1, column 0😺<!--column--></td>
+                <td>row 1, column 1😜<!--column--></td>
+                <td>row 1, column 2😁<!--column--></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Lists</h2>
+        <ul><!--unordered list-->
+            Unordered list
+            <li>Number 1</li>
+            <li>Number 2</li>
+        </ul>
+        <ol><!--ordered list-->
+            Ordered list
+            <li>Number 1</li>
+            <li>Number 2</li>
+        </ol>
+    <h2>Controls</h2>
     <div>
-        External image
-        <img src="https://cdn.pixabay.com/photo/2018/11/22/23/57/london-3833039_960_720.jpg" alt="external">
-        Broken image
-        <img src="notfound.jpg" alt="not found"><br>
-        Internal image
-        <img src="local.jpg" alt="internal">
-    </div>
+        <h3>Buttons</h3>
+        <button value="button">Don't click</button>
+        <h3>Drop down</h3>
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select>
+        <br><br>
+        <label title="username">Username</label>
+        <br>
+        <input type="text" placeholder="username">
+        <br>
+        <label title="password">Password</label>
+        <br>
+        <input type="password" placeholder="password">
+        <br>
+        <label title="number">Number</label>
+        <br>
+        <input type="number" placeholder="1234">
+        <h3>Radio buttons</h3>
+        <label title="number">Pet</label><br>
+        <input type="radio" name="animals" value="cats">Cats</input>
+        <input type="radio" name="animals" value="dogs">Dogs</input>
+        <label>Other:</label>
+        <input type="text">
+        <h3>Checkboxes</h3>
+        <input type="checkbox">grapes</input>
+        <input type="checkbox">apples</input>
+        </div>
+        <footer>
+            <hr />
+            Page footer
+        </footer>
 </body>
 </html>
