@@ -11,69 +11,41 @@
     table{background-color: rgb(228, 127, 90);border: 1mm ridge aquamarine; border-style: dashed; text-align: center; padding: 5px}
     body{background-color: blanchedalmond}
     
-    
+    .table1 {background-color:crimson ;border:2mm dotted black; border-collapse: collapse; font-size: 14px; text-align:center;border:0;padding:5px;background-color:transparent;}
+    .table1 th {background-color:darksalmon  ;color:rgb(56, 51, 51)}
+    .table1 td, tr {border:1px solid rgb(68, 64, 64); padding: 10px;width:30mm}
+    /*.table1 th:first-child {width:40%}
+
+    /* table.example5 {background-color:GreenYellow;border:1px solid black;width:100%;}
+    table.example5 th, table.example5 td {text-align:center;border:0;padding:5px;background-color:transparent;}
+    table.example5 th {background-color:LimeGreen;color:white;}
+    table.example5 th:first-child {width:20%;}*/
+
     </style>
 </head>
 <body>
     <h1>This is my Kitschy Page</h1>
     <p id="italicDiscreet">--Here I just want to say some crap to introduce this website</p>
     <br><br>
-    <h2>Just an H2</h2>
-    <article>
-        <section>
-            section 1 <i>with italic</i> and <u>underline</u>
-        </section>
-
-        <section>
-            <p>
-                section 2 <b>with bold text</b>
-            </p>
-        </section>
-    </article>
-
-    <h2>Tables</h2>
-    <table>
-        <thead><!--Table head-->
-            <caption>Title</caption>
-            <tr>
-                <td>
-                    <b>column0</b>
-                </td>
-                <td>
-                    <b>column1</b>
-                </td>
-                <td>
-                    <b>column2</b>
-                </td>
-            </tr>
-        </thead>
-        <tbody><!--this is the actual body of the table-->
-            <tr><!--row1-->
-                <td>
-                    <div>
-                            row 0, column 0😃<!--column-->
-                    </div>
-                </td>
-                <td>row 0, column 1😁<!--column--></td>
-                <td>row 0, column 2😜<!--column--></td>
-            </tr>
-            <tr><!--row2-->
-                <td>row 1, column 0😺<!--column--></td>
-                <td>row 1, column 1😜<!--column--></td>
-                <td>row 1, column 2😁<!--column--></td>
-            </tr>
-        </tbody>
+    <h2>Table</h2>
+    <table class="table1">
+        <tr>
+            <td colspan="1"></td><th colspan="2">columns</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Table header</th>
+            <td>Table cell 1</td><td>Table cell 2</td>
+        </tr>
+        <tr>
+            <td>Table cell 3</td><td>Table cell 4</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Table header</th>
+            <td>Table cell 1</td><td>Table cell 2</td>
+        </tr>
+        <tr>
+            <td>Table cell 3</td><td>Table cell 4</td>
+        </tr>
     </table>
-    <h2>Lists</h2>
-        <ul><!--unordered list-->
-            Unordered list
-            <li>Number 1</li>
-            <li>Number 2</li>
-        </ul>
-        <ol><!--ordered list-->
-            Ordered list
-            <li>Number 1</li>
-            <li>Number 2</li>
-        </ol>
 </body>
 </html>
